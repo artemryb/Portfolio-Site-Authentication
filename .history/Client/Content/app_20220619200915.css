@@ -1,0 +1,91 @@
+.input-group-addon:first-child {
+    border-right: 0;
+}
+
+.input-group-addon {
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    text-align: center;
+    border: 1px solid darkgrey;
+    border-radius: 4xpx;
+}
+
+.input-group-addon .fa {
+    font-size: 18px;
+}
+
+.input-group .form-control {
+    position: relative;
+    z-index: 2;
+    float: left;
+    margin-bottom: 0;
+}
+
+.input-group .form-control:last-child {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+
+
+.login {
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    background-color: lightgrey;
+    border-radius: .3rem;
+}
+
+.login input {
+    background-color: white;
+    border-color: darkgrey;
+    border-radius: .4em;
+    width: 100%;
+}
+
+
+
+.contact-form button {
+    padding: 10px 15px;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #f13e3e;
+    border: 2px solid #f13e3e;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: transparent;
+    color: #f13e3e;
+}
+
+.contact-form .centered-content {
+    width: 960px;
+    margin: 0 auto;
+}
+
+
+.contact-form input,
+.contact-form select {
+    padding: 10px 15px;
+    margin-top: 7px;
+    border: 1px solid #979797;
+}
+
+.contact-form input::placeholder {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+.contact-form .grouped-inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contact-form .grouped-inputs>* {
+    flex-grow: 1;
+}

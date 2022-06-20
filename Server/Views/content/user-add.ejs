@@ -1,0 +1,52 @@
+<div class="container">
+    <h1 class="col-lg-6 col-md-10 col-sm-10">Add User</h1>
+    <hr>
+    <!-- Message Area -->
+    <% if(messages.length > 0) { %>
+    <div id="messageArea" class="alert alert-danger">
+      <%= messages %>
+    </div>
+    <% } %>
+
+    <div class="row justify-content-lg-center g-3">
+      <form method="POST" class="col-lg-6 col-md-10 col-sm-10">
+
+        <div class="input-group mb-3">
+          <span class="input-group-text">User Name</span>
+          <input id="userName" name="userName" type="text" class="form-control" value=""
+          aria-label="User Name" aria-describedby="User Name Input" required>
+        </div>
+
+        <div class="input-group mb-3">
+            <span class="input-group-text">User Display Name</span>
+            <input id="displayName" name="displayName" type="text" class="form-control" value=""
+            aria-label="User Display Name" aria-describedby="User Display Name Input" required>
+          </div>
+
+        <div class="input-group mb-3">
+          <span class="input-group-text">Email Address</span>
+          <input id="emailAddress" name="emailAddress" type="text" class="form-control" value=""
+          aria-label="Email Address" aria-describedby="Email Address Input" required>
+        </div>
+
+        <div class="input-group mb-3">
+          <span class="input-group-text">Password</span>
+          <input id="password" name="password" type="password" class="form-control" value=""
+          aria-label="Password" aria-describedby="Password Input" required>
+        </div>
+
+        <div class="input-group mb-3">
+          <span class="input-group-text">Confirm Password</span>
+          <input id="confirmPassword" name="confirmPassword" type="password" class="form-control" value=""
+          aria-label="Confirm Password" aria-describedby="Confirm Password Input" required>
+        </div>
+        
+        <button id="addButton" type="submit" class="btn btn-primary"><i class="fas fa-plus-circle fa-lg"></i> Add</button>
+
+        <a href="/user-list" id="cancelButton" type="button" class="btn btn-warning"><i class="fas fa-undo fa-lg"></i> Cancel</a>
+      
+      </form>
+
+    </div>
+</div>
+
